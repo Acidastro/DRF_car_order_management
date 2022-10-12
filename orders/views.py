@@ -39,22 +39,22 @@ class OrdersAPIDestroy(generics.RetrieveDestroyAPIView):
 class ColorsAPIList(generics.ListCreateAPIView):
     queryset = ColorCar.objects.all()
     serializer_class = ColorCarSerializer
-    permission_classes = (IsAuthenticatedOrReadOnly,)  # Установит ограничение доступа
+    # permission_classes = (IsAuthenticatedOrReadOnly,)  # Установит ограничение доступа
     pagination_class = OrdersAPIListPagination
 
 
 class ColorsAPIUpdate(generics.RetrieveUpdateAPIView):
     queryset = ColorCar.objects.all()
     serializer_class = ColorCarSerializer
-    permission_classes = (IsAuthenticated,)  # Установит ограничение доступа
-    authentication_classes = (
-        TokenAuthentication,)  # Предоставляет доступ только авторизованным по токенам пользователям
+    # permission_classes = (IsAuthenticated,)  # Установит ограничение доступа
+    # authentication_classes = (
+    #     TokenAuthentication,)  # Предоставляет доступ только авторизованным по токенам пользователям
 
 
 class ColorsAPIDestroy(generics.RetrieveDestroyAPIView):
     queryset = ColorCar.objects.all()
     serializer_class = ColorCarSerializer
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
 
 
 # CRUD for brands:
@@ -62,22 +62,22 @@ class ColorsAPIDestroy(generics.RetrieveDestroyAPIView):
 class BrandsAPIList(generics.ListCreateAPIView):
     queryset = BrandCar.objects.all()
     serializer_class = BrandCarSerializer
-    permission_classes = (IsAuthenticatedOrReadOnly,)  # Установит ограничение доступа
+    # permission_classes = (IsAuthenticatedOrReadOnly,)  # Установит ограничение доступа
     pagination_class = OrdersAPIListPagination
 
 
 class BrandsAPIUpdate(generics.RetrieveUpdateAPIView):
     queryset = BrandCar.objects.all()
     serializer_class = BrandCarSerializer
-    permission_classes = (IsAuthenticated,)  # Установит ограничение доступа
-    authentication_classes = (
-        TokenAuthentication,)  # Предоставляет доступ только авторизованным по токенам пользователям
+    # permission_classes = (IsAuthenticated,)  # Установит ограничение доступа
+    # authentication_classes = (
+    #     TokenAuthentication,)  # Предоставляет доступ только авторизованным по токенам пользователям
 
 
 class BrandsAPIDestroy(generics.RetrieveDestroyAPIView):
     queryset = BrandCar.objects.all()
     serializer_class = BrandCarSerializer
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
 
 
 # CRUD for models:
@@ -85,19 +85,19 @@ class BrandsAPIDestroy(generics.RetrieveDestroyAPIView):
 class ModelsAPIList(generics.ListCreateAPIView):
     queryset = ModelCar.objects.all()
     serializer_class = ModelCarSerializer
-    permission_classes = (IsAuthenticatedOrReadOnly,)  # Установит ограничение доступа
+    # permission_classes = (IsAuthenticatedOrReadOnly,)  # Установит ограничение доступа
     pagination_class = OrdersAPIListPagination
 
 
 class ModelsAPIUpdate(generics.RetrieveUpdateAPIView):
     queryset = ModelCar.objects.all()
     serializer_class = ModelCarSerializer
-    permission_classes = (IsAuthenticated,)  # Установит ограничение доступа
-    authentication_classes = (
-        TokenAuthentication,)  # Предоставляет доступ только авторизованным по токенам пользователям
+    # permission_classes = (IsAuthenticated,)  # Установит ограничение доступа
+    # authentication_classes = (
+    #     TokenAuthentication,)  # Предоставляет доступ только авторизованным по токенам пользователям
 
 
 class ModelsAPIDestroy(generics.RetrieveDestroyAPIView):
     queryset = ModelCar.objects.all()
     serializer_class = ModelCarSerializer
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)

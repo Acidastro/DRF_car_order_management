@@ -11,17 +11,17 @@ class OrderCarSerializer(serializers.ModelSerializer):
 
 class ModelCarSerializer(serializers.ModelSerializer):
     class Meta:
-        model = OrderCar
+        model = ModelCar
         fields = '__all__'
 
 
 class ColorCarSerializer(serializers.ModelSerializer):
     class Meta:
-        model = OrderCar
+        model = ColorCar
         fields = '__all__'
 
 
 class BrandCarSerializer(serializers.ModelSerializer):
     class Meta:
-        model = OrderCar
+        model = BrandCar
         fields = '__all__'
