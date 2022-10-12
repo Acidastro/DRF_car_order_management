@@ -11,6 +11,7 @@ class OrderCar(models.Model):
     color = models.ForeignKey('ColorCar', on_delete=models.CASCADE, null=False, verbose_name='Цвет')
     brand = models.ForeignKey('BrandCar', on_delete=models.CASCADE, null=False, verbose_name='Бренд')
     model = models.ForeignKey('ModelCar', on_delete=models.CASCADE, null=False, verbose_name='Модель')
+    amount = models.IntegerField(null=False, default=1, verbose_name='Количество')
     date = models.DateField(default=timezone.now, verbose_name='Дата и время')
 
     def __str__(self):
