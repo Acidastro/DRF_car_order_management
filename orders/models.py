@@ -33,6 +33,7 @@ class ModelCar(models.Model):
     Модели автомобилей
     """
     model = models.CharField(max_length=100, blank=False, null=True, verbose_name='Модель')
+    brand = models.ForeignKey('BrandCar', on_delete=models.CASCADE, blank=False, null=True, verbose_name='Бренд')
 
     def __str__(self):
         return f' {self.model}'

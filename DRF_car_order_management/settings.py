@@ -116,12 +116,12 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.JSONRenderer',  # Обмен данными в json формате
         'rest_framework.renderers.BrowsableAPIRenderer',  # Позволяет управлять в браузере
     ],
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',  # Установит ограничение доступа на проект
-    ],
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',  # Аунтификация по токенам
-        'rest_framework.authentication.BasicAuthentication',  # Аунтификация по сессиям
-        'rest_framework.authentication.SessionAuthentication',  # Аунтификация по сессиям
-    ),
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',  # Установит ограничение доступа на проект
+    # ],
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
+    #     'rest_framework.authentication.TokenAuthentication',  # Аунтификация по токенам
+    #     'rest_framework.authentication.BasicAuthentication',  # Аунтификация по сессиям
+    #     'rest_framework.authentication.SessionAuthentication',  # Аунтификация по сессиям
+    # ),
 }
