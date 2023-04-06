@@ -1,7 +1,7 @@
 # DRF_car_order_management
 Python test case, implemented with Django Rest Framework.
 
-### Выполненная адача:
+### Выполненная задача:
 
 Реализовано небольшое Django-приложение, которое решает задачу по управлению заказами на автомобили поставщика.
 
